@@ -16,8 +16,91 @@
 			</div>
 			<div class="blue-board">
 				<div class="hero">
-					
+					<!-- later this will change to title that flips when hovered with a mouse -->
+					<h1 class="hero__title">
+						Recipeek
+					</h1>
 				</div>
+				<form action="">
+					<label for="search"></label>
+					<input id="search" type="search" placeholder="I have..." name="ingredient" onfocus="this.placeholder = ''" onblur="this.placeholder = `Search Ingredient`" required>
+					<nav class="dropdown">
+						<div class="dropdown__background">
+							<span class="dropdown__background__arrow"></span>
+						</div>
+						<ul class="types">
+							<li>
+								<div class="type">Allergy</div>
+								<div class="dropdown">
+									<div class="allergies">
+										<label for="tree">Tree Nut</label>
+										<input id="tree" type="checkbox" name="allergy" value="395^Tree Nut-Free">
+										<label for="dairy">Dairy</label>
+										<input id="dairy" type="checkbox" name="allergy" value="396^Dairy-Free">
+										<label for="egg">Egg</label>
+										<input id="egg" type="checkbox" name="allergy" value="397^Egg-Free">
+										<label for="gluten">Gluten</label>
+										<input id="gluten" type="checkbox" name="allergy" value="393^Gluten-Free">
+										<label for="penut">Penut</label>
+										<input id="penut" type="checkbox" name="allergy" value="394^Peanut-Free">
+										<label for="seafood">Seafood</label>
+										<input id="seafood" type="checkbox" name="allergy" value="398^Seafood-Free">
+										<label for="sesame">Sesame</label>
+										<input id="sesame" type="checkbox" name="allergy" value="399^Sesame-Free">
+										<label for="soy">Soy</label>
+										<input id="soy" type="checkbox" name="allergy" value="400^Soy-Free">
+										<label for="sulfite">Sulfite</label>
+										<input id="sulfite" type="checkbox" name="allergy" value="401^Sulfite-Free">
+										<label for="wheat">Wheat</label>
+										<input id="wheat" type="checkbox" name="allergy" value="392^Wheat-Free">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="type">Diet</div>
+								<div class="dropdown">
+									<div class="diets">
+										<input id="keto" type="radio" name="diet" value="406^Ketogenic">
+										<label for="keto">Ketogenic</label>
+										<input id="lacto" type="radio" name="diet" value="388^Lacto vegetarian">
+										<label for="lacto">Lacto vegetarian</label>
+										<input id="ovo" type="radio" name="diet" value="389^Ovo vegetarian">
+										<label for="ovo">Ovo vegetarian</label>
+										<input id="pescetarian" type="radio" name="diet" value="390^Pescetarian">
+										<label for="pescetarian">Pescetarian</label>
+										<input id="vegan" type="radio" name="diet" value="386^Vegan">
+										<label for="vegan">Vegan</label>
+										<input id="fodmap" type="radio" name="diet" value="408^Low FODMAP">
+										<label for="fodmap">Low FODMAP</label>
+										<input id="lacto-ovo" type="radio" name="diet" value="387^Lacto-ovo vegetarian">
+										<label for="lacto-ovo">Lacto-ovo vegetarian</label>
+										<input id="paleo" type="radio" name="diet" value="403^Paleo">
+										<label for="paleo">Paleo</label>
+										<input id="none" type="radio" name="diet" value="none">
+										<label for="none">None</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="type">Time</div>
+								<div class="dropdown">
+									<div class="time">
+										<input id="15min" type="radio" name="duartion" value="900">
+										<label for="15min">15 minutes</label>
+										<input id="30min" type="radio" name="duartion" value="1800">
+										<label for="30min">30 minutes</label>
+										<input id="45min" type="radio" name="duartion" value="2700">
+										<label for="45min">45 minutes</label>
+										<input id="1hr" type="radio" name="duartion" value="3600">
+										<label for="1hr">1 hour</label>
+										<input id="all" type="radio" name="duartion" value="none">
+										<label for="all">All</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</form>
 			</div>
 		</div>
 	</header>
